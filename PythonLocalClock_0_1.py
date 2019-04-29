@@ -1,4 +1,5 @@
-'''application showing current time'''
+'''simple application made for practice 
+made to show local current time'''
 
 from tkinter import *
 import time
