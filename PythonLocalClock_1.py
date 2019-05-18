@@ -5,7 +5,7 @@ from tkinter import *
 import time
 
 win=Tk()
-win.title('Current Time')
+win.title('Current Time ver. 1.0')
 
 win.geometry('250x100')
 win.resizable(width=False,height=False)
