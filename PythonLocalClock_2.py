@@ -6,7 +6,7 @@ import turtle
 window = turtle.Screen()
 window.bgcolor("gray")
 window.setup(width=500, height=500)
-window.title("Python Local Clock v0.2")
+window.title("Python Local Clock ver. 2.0")
 window.tracer(0)
 
 draw=turtle.Turtle()
@@ -39,13 +39,13 @@ def draw_clock(h,m,s,draw):
       draw.rt(30)
 
    #draw minutes
-   # for _ in range(60):
-   #    draw.fd(205)
-   #    draw.pendown()
-   #    draw.fd(5)
-   #    draw.penup()
-   #    draw.goto(0,0)
-   #    draw.rt(6)
+   for _ in range(60):
+       draw.fd(205)
+       draw.pendown()
+       draw.fd(5)
+       draw.penup()
+       draw.goto(0,0)
+       draw.rt(6)
    
    #hours hand
    draw.penup()
