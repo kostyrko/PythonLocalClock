@@ -8,20 +8,19 @@ import datetime
 win=Tk()
 win.title('Current Time ver. 1.1')
 
-win.geometry('250x150')
+win.geometry('300x150')
 win.resizable(width=False,height=False)
 
 def get_time():
    localtime = time.strftime('%H:%M:%S',time.localtime())
-   label2=Label(win, text=localtime)
+
    result.insert(END,'{0:^30}\n'.format(localtime))
-   # label2.place(x=95,y=90)
+
 
 def get_date():
    date_today=datetime.date.today().isoformat()
-   label2=Label(win, text=date_today)
    result.insert(END, '{0:^30}\n'.format(date_today))
-   #label2.place(x=88,y=115)
+
 
 def clear():
     result.delete("1.0", END)
