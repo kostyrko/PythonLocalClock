@@ -3,7 +3,7 @@ A simple local clock project written in python for practice
 
 Version 1 (current version 1.2) - datetime module and tkinter
 
-![](image/PythonLocalClock_1_2.PNG)
+![](image/PythonLocalClock_1_2.png)
 
 Old version 1 (1.1)
 
