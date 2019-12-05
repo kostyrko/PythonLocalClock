@@ -8,24 +8,24 @@ import datetime
 class PythonLocalClock:
     def __init__(self,master):
         self.master = master
-        master.title('Current Time ver. 1.2')
+        master.title('Current Time ver. 1.2.1')
 
         self.label = tk.Label(master, 
                             text='Push a button to see current time or date',
                             relief="sunken")
         self.label.pack()
 
-        self.time_button = tk.Button(master, 
-                                    text='Show time', bg="orange",
+        self.time_button = tk.Button(master,width=8, 
+                                    text='Show time', bg="yellow green",
                                     command =self.get_time)
         self.time_button.pack()
 
-        self.date_button = tk.Button(master, 
-                                    text='Show date', bg= "yellow",
+        self.date_button = tk.Button(master,width=8, 
+                                    text='Show date', bg= "SteelBlue3",
                                     command =self.get_date)
         self.date_button.pack()
 
-        self.clear = tk.Button(master, text='Clear', bg="red",
+        self.clear = tk.Button(master,width=8, text='Clear', bg="red3",
                                 command =self.clear)
         self.clear.pack()
 
@@ -51,13 +51,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
-
